@@ -28,7 +28,7 @@ import os
 
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ['ai-bg-tools.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['aibgremover.onrender.com', '127.0.0.1', 'localhost']
 
 
 
@@ -58,7 +58,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://aibgremover.onrender.com",
+]
+
 
 
 ROOT_URLCONF = 'bgremover.urls'
