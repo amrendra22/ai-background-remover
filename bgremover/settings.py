@@ -27,7 +27,8 @@ import os
 
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1,localhost,ai-bg-tools.onrender.com").split(",")
+ALLOWED_HOSTS = ['ai-bg-tools.onrender.com', '127.0.0.1', 'localhost']
+
 
 
 
