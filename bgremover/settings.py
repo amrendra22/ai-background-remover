@@ -144,7 +144,7 @@ CELERY_TASK_SERIALIZER = 'json'
 
 import logging
 
-DEBUG = True  # Ensure Debug mode is ON in development
+DEBUG = False  # Ensure Debug mode is ON in development
 
 # LOGGING = {
 #     'version': 1,
